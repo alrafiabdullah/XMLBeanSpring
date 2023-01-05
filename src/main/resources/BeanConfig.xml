@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="coder1" class="com.abdullahalrafi.springbootproject.main.model.Coder">
+<!--        <property name="id" value="1001"/>-->
+<!--        <property name="name" value="Abdullah"/>-->
+<!--        <property name="language" value="Java"/>-->
+<!--        <property name="computer" ref="computer1"/>-->
+        <constructor-arg index="0" value="1001" />
+        <constructor-arg index="1" value="Abdullah" />
+        <constructor-arg index="2" value="Java" />
+        <constructor-arg index="3" ref="computer1" />
+
+    </bean>
+
+    <bean id="computer1" class="com.abdullahalrafi.springbootproject.main.model.Computer">
+<!--        <property name="brand" value="MacBook M1 Pro" />-->
+        <constructor-arg index="0" value="Apple MacBook M1 Pro" />
+    </bean>
+
+</beans>
